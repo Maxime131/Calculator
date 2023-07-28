@@ -8,14 +8,14 @@ function calculate(button){
   const value = button.textContent
   if(value ==="CLEAR"){
     calculation = []
-    srceenDisplay.textContent = '.'
+    srceenDisplay.textContent = ''
   }
   else if(value === "="){
     srceenDisplay.textContent = eval(accumulativeCalculation)
   }else{calculation.push(value)
     accumulativeCalculation = calculation.join('')
     srceenDisplay.textContent = accumulativeCalculation
-    console.log(calculation)}
+   }
 
   
 }
