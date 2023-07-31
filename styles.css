@@ -13,11 +13,16 @@ body{
 
 .screen{
     width: 224px;
-    height: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgb(176, 205, 176);
-    font-size: 40px;
+    font-size: 20px;
     text-align: end;
     padding: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .buttons{
@@ -49,11 +54,25 @@ button:active{
 equals:hover{
     background-color: rgb(198, 1, 1);
 }
+#container{
+    display: flex;
+}
 #clear{
-    width: 100%;
+    width: 60%;
     background-color: rgb(252, 226, 27);
     font-size: 30px;
+    margin-right: 16px;
 }
+#del{
+    
+    width: 60%;
+    background-color: rgb(252, 117, 27);
+    font-size: 30px;
+    margin-right: 8px;
+}
+#del:hover{
+    background-color: rgb(252, 101, 17);
+    }
 #clear:hover{
 background-color: rgb(252, 201, 17);
 }

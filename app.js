@@ -16,8 +16,6 @@ function calculate(button){
     accumulativeCalculation = calculation.join('')
     srceenDisplay.textContent = accumulativeCalculation
    }
-
-  
 }
 
 buttons.forEach(button => button.addEventListener('click', () => calculate(button)))
