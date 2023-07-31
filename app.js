@@ -9,8 +9,10 @@ function calculate(button){
   if(value ==="CLEAR"){
     calculation = []
     srceenDisplay.textContent = ''
-  }
-  else if(value === "="){
+  }else if(value === "DEL"){
+    calculation = calculation.slice(0, -1)
+    srceenDisplay.textContent = calculation.join('')
+  } else if(value === "="){
     srceenDisplay.textContent = eval(accumulativeCalculation)
   }else{calculation.push(value)
     accumulativeCalculation = calculation.join('')
